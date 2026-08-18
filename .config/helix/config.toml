@@ -1,0 +1,84 @@
+theme = "clear"
+
+[editor]
+line-number = "relative"
+#cursorline = true
+mouse = true
+scrolloff = 8
+bufferline = "multiple"
+color-modes = true
+auto-completion = true
+completion-timeout = 5
+completion-trigger-len = 1
+auto-format = true
+end-of-line-diagnostics = "warning"
+popup-border = "none"
+
+[editor.auto-save]
+focus-lost = true
+after-delay = { enable = true, timeout = 2000 }
+
+[editor.cursor-shape]
+normal = "bar"
+insert = "bar"
+select = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-base-name"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "position-percentage", "file-type"]
+
+[editor.lsp]
+display-inlay-hints = false
+display-progress-messages = true
+display-signature-help-docs = true
+auto-signature-help = true
+
+[editor.indent-guides]
+render = true
+character = "│"
+skip-levels = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "spacer", "line-numbers", "spacer"]
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.file-picker]
+hidden = false
+git-ignore = true
+parents = true
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[keys.normal]
+C-s = ":w"
+C-z = "undo"
+C-y = "redo"
+
+C-a = "select_all"
+
+C-c = "yank_main_selection_to_clipboard"
+C-v = ["paste_clipboard_after", "move_char_right"]
+C-x = ["yank_main_selection_to_clipboard", "delete_selection"]
+
+C-tab = ":buffer-next"
+C-S-tab = ":buffer-previous"
+C-w = ":buffer-close"
+C-p = "file_picker"
+
+[keys.insert]
+C-s = ["normal_mode", ":write"]
+C-z = ["normal_mode", "undo"]
+C-v = "paste_clipboard_before"
+C-a = ["normal_mode", "select_all"]
+
+[keys.select]
+C-c = "yank_main_selection_to_clipboard"
+C-x = ["yank_main_selection_to_clipboard", "delete_selection"]
+C-s = ["normal_mode", ":write"]
+backspace = "delete_selection"
+del = "delete_selection"

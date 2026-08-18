@@ -1,0 +1,22 @@
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.mouse = "a"
+vim.opt.scrolloff = 8
+vim.opt.termguicolors = true
+vim.opt.signcolumn = "yes"
+vim.opt.cursorline = false
+vim.opt.laststatus = 3
+vim.opt.showmode = false
+vim.opt.updatetime = 200
+vim.opt.timeoutlen = 300
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+vim.opt.autowrite = true
+vim.opt.autowriteall = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.wrap = false
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.fillchars = { eob = " " }

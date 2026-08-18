@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+borders \
+    style=round \
+    active_color=0xffc1c1c1 \
+    inactive_color=0xff505050 \
+    width=2.0 \
+    hidpi=on \
+    ax_focus=off

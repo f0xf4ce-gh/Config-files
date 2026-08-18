@@ -1,0 +1,40 @@
+# Darkthrone monochrome — matched to the shell/tmux palette.
+# black · charcoal · silver · white
+
+use_nerdfont = true
+flip_status_indicators = true
+initial_screen = "library"
+hide_display_names = true
+library_tabs = ["playlists", "tracks", "browse"]
+statusbar_format = "%title  ·  %artists"
+
+[theme]
+background = "default"
+primary = "#eeeeee"
+secondary = "#888888"
+title = "#ffffff"
+playing = "#ffffff"
+playing_selected = "#000000"
+playing_bg = "#1f1f1f"
+highlight = "#ffffff"
+highlight_bg = "#303030"
+highlight_inactive_bg = "#151515"
+error = "#ffffff"
+error_bg = "#555555"
+statusbar = "#cccccc"
+statusbar_progress = "#ffffff"
+statusbar_bg = "default"
+cmdline = "#ffffff"
+cmdline_bg = "#202020"
+search_match = "#000000"
+
+[track_format]
+left = "%title"
+center = "%artist"
+right = "%duration"
+
+[keybindings]
+# A few ceremonial shortcuts; defaults remain available.
+"Shift+Enter" = "playpause"
+"Ctrl+S" = "save"
+"Ctrl+Q" = "quit"
