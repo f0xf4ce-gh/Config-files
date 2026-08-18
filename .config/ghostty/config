@@ -1,0 +1,4 @@
+# Minimal borderless window
+# Hide the title bar while keeping macOS rounded corners.
+macos-titlebar-style = hidden
+macos-window-buttons = hidden

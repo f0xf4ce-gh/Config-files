@@ -1,0 +1,93 @@
+inherits = "base16_default"
+
+# --------------------
+# Transparent UI
+# --------------------
+
+"ui.background" = {}
+
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+
+"ui.statusline" = {}
+"ui.statusline.inactive" = {}
+
+"ui.popup" = {}
+"ui.menu" = {}
+"ui.help" = {}
+
+"ui.window" = "gray"
+
+"ui.text" = "white"
+"ui.text.focus" = "light-cyan"
+"ui.text.inactive" = "gray"
+
+"ui.linenr" = "gray"
+"ui.linenr.selected" = "light-cyan"
+
+"ui.cursor" = { fg = "black", bg = "light-cyan" }
+"ui.cursor.primary" = { fg = "black", bg = "light-cyan" }
+
+"ui.cursorline.primary" = { bg = "#111111" }
+
+"ui.selection" = { bg = "#222222" }
+
+"ui.virtual.whitespace" = "gray"
+"ui.virtual.indent-guide" = "#333333"
+
+# --------------------
+# Diagnostics
+# --------------------
+
+"error" = "light-red"
+"warning" = "yellow"
+"info" = "light-blue"
+"hint" = "light-cyan"
+
+"diagnostic.error" = { underline = { color = "light-red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+
+# --------------------
+# Git
+# --------------------
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "yellow"
+
+# --------------------
+# Syntax
+# --------------------
+
+"comment" = { fg = "gray", modifiers = ["italic"] }
+
+"keyword" = "magenta"
+"keyword.control" = "light-magenta"
+"keyword.operator" = "magenta"
+
+"string" = "green"
+"string.special" = "light-green"
+
+"constant" = "yellow"
+"constant.numeric" = "yellow"
+
+"type" = "light-blue"
+"type.builtin" = "cyan"
+
+"variable" = "white"
+"variable.parameter" = "light-yellow"
+"variable.builtin" = "light-magenta"
+
+"function" = "cyan"
+"function.method" = "light-cyan"
+"function.builtin" = "light-blue"
+
+"namespace" = "light-blue"
+
+"operator" = "light-magenta"
+
+"attribute" = "light-yellow"
+
+"tag" = "light-red"
+
+"punctuation" = "light-gray"

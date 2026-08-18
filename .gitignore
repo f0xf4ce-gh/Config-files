@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dotfiles safety: keep credentials, history, state, cache, and generated metadata out
+.DS_Store
+**/.DS_Store
+.gitconfig
+.*history*
+**/*history*
+.claude*
+.config/gh/hosts.yml
+.config/cagent/
+.config/configstore/
+.config/ncspot/userstate*
+.config/zed/prompts/
+.config/spicetify/
+.config/tmux/plugins/
+gh/hosts.yml
+cagent/
+configstore/
+ncspot/userstate*
+zed/prompts/
+spicetify/
+tmux/plugins/
+**/.cache/
+**/cache/
+**/*state*
+**/*session*
+**/*credential*
+**/*secret*
+**/*token*
